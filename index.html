@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    
+      
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+    </style>
+
+  
+
+
+    
+  <script>
+    $(document).ready(function(){ 
+      $("#search_btn").click(function() {
+        var doc_input = $("#doc_input").val();
+        var area_input = $("#area_input").val();
+
+        $.post("web.php" , {search: doc_input , area: area_input} , function(response){
+          $("#section2").html(response);
+
+        });
+
+
+      });
+
+
+    });
+
+
+  </script>
+  </head>
+  <body>
+    <main
+      style="
+        position: relative;
+        background-color: #f3f7ff;
+        width: 100%;
+        height: 2438px;
+        overflow: hidden;
+        mix-blend-mode: normal;
+      "
+    >
+      <nav
+        style="
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 1701px;
+          height: 163px;
+          overflow: hidden;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: 30px;
+            left: 75px;
+            width: 724px;
+            height: 127px;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: 18px;
+              left: 34px;
+              font-size: 48px;
+              font-weight: 800;
+              font-family: Inter;
+              color: #243aa0;
+              text-align: left;
+              display: inline-block;
+              width: 690px;
+              height: 109px;
+            "
+          >
+            Health App
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              border-radius: 45px;
+              background-color: rgba(89, 98, 188, 0.32);
+              width: 340px;
+              height: 96px;
+            "
+          ></div>
+        </div>
+        <div
+          style="
+            position: absolute;
+            top: 0px;
+            left: 618px;
+            width: 1083px;
+            height: 109px;
+            overflow: hidden;
+          "
+        >
+          <button
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: transparent;
+              position: absolute;
+              top: 54px;
+              left: -17px;
+              font-size: 48px;
+              font-weight: 800;
+              font-family: Inter;
+              color: #000;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 220px;
+              height: 51px;
+            "
+          >
+            Home</button
+          ><button  onclick="scrollToSectionlast()"
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: transparent;
+              position: absolute;
+              top: 51px;
+              left: 203px;
+              font-size: 48px;
+              font-weight: 800;
+              font-family: Inter;
+              color: #000;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 220px;
+              height: 51px;
+            "
+          >
+            About us</button>
+            <button  onclick="scrollToSection2()"
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: transparent;
+              position: absolute;
+              top: 51px;
+              left: 457px;
+              font-size: 48px;
+              font-weight: 800;
+              font-family: Inter;
+              color: #000;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 220px;
+              height: 51px;
+            "
+          >
+            Services</button
+          ><button
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: #5962bc;
+              position: absolute;
+              top: 44px;
+              left: 704px;
+              border-radius: 40px;
+              width: 308px;
+              height: 64px;
+            "
+          ></button
+          ><button   onclick="scrollToSection()"
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: transparent;
+              position: absolute;
+              top: 46px;
+              left: 685px;
+              font-size: 36px;
+              font-weight: 800;
+              font-family: Inter;
+              color: #fcfcfc;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 345px;
+              height: 63px;
+            "
+          >
+
+            Get started
+          </button>
+        </div>
+      </nav>
+
+
+
+      <section id="section1"
+        style="
+          position: absolute;
+          top: 163px;
+          left: 0px;
+          width: 1701px;
+          height: 848px;
+          overflow: hidden;
+          text-align: left;
+          font-size: 48px;
+          color: #393939;
+          font-family: Inter;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -1px;
+            left: 0px;
+            width: 940px;
+            height: 849px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: 249px;
+              left: 94px;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              width: 752px;
+              height: 153.09px;
+            "
+          >
+            <span style="line-break: anywhere; width: 100%"
+              ><p style="margin-block-start: 0; margin-block-end: 0px">
+                <span>Find and search your </span>
+              </p>
+              <p
+                style="
+                  margin-block-start: 0;
+                  margin-block-end: 0px;
+                  color: #1179c5;
+                "
+              >
+                <span>suitable Doctor’s</span><br>
+                <br>
+              </p>
+              <p style="margin: 0"><span>&nbsp;</span></p></span
+            >
+          </div>
+          
+          <div
+            style="
+              position: absolute;
+              top: 345.23px;
+              left: 94px;
+              font-size: 24px;
+              font-weight: 600;
+              color: #a1a7a3;
+              display: flex;
+              align-items: center;
+              width: 676px;
+              height: 64.73px;
+            "
+          >
+            Join us and take care of you and your family with health services
+            that will make you feel confident and safe in your daily life
+          </div>
+
+          <div
+          style="
+            position: absolute;
+            top: 467.69px;
+            left: 74px;
+            border-radius: 30px;
+            background-color: #fdfdfd;
+            width: 792px;
+            height: 101.47px;
+          "
+        ></div>
+        
+        
+
+        <div 
+          style="
+            position: absolute;
+            top: 463px;
+            left: 79px;
+            width: 787px;
+            height: 106px;
+            overflow: hidden;
+          "
+        >
+        <div id="docs">
+
+          <input id="doc_input"
+            style="
+              border: none;
+              background-color: #e8e8e8;
+              position: absolute;
+              top: 30.94px;
+              left: 45px;
+              border-radius: 40px;
+              width: 220px;
+              height: 48.99px;
+            "
+            type="text"
+            placeholder="Search Doctors"
+            required
+          /><input id="area_input"
+            style="
+              border: none;
+              background-color: #e8e8e8;
+              position: absolute;
+              top: 31.81px;
+              left: 332px;
+              border-radius: 40px;
+              width: 220px;
+              height: 48.99px;
+            "
+            type="text"
+            placeholder="Search Area"
+            required
+          />
+          
+          <button  id="search_btn"  onclick="scrollTodocs()"
+
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: #1976d2;
+              position: absolute;
+              top: 31.81px;
+              left: 631px;
+              border-radius: 50px;
+              width: 99px;
+              height: 48.99px;
+            "
+
+            
+
+          > 
+
+          <i font-size: 100px; class="fa fa-search"></i>
+
+
+            </button>
+          
+        </div>
+
+
+
+       </div>
+
+          
+  </div>
+
+    <div
+    style="
+      position: absolute;
+      top: -1px;
+      left: 940px;
+      width: 761px;
+      height: 849px;
+      overflow: hidden;
+    "
+  >
+
+          <img
+            style="
+              position: absolute;
+              top: 207px;
+              left: 33px;
+              width: 696px;
+              height: 367.95px;
+              object-fit: cover;
+            "
+            alt=""
+            src="images/yy.png"
+          />
+
+    </div>
+
+
+      </section>
+
+
+
+
+
+
+      <section id="section2"
+        style="
+          position: absolute;
+          top: 1009px;
+          left: 0px;
+          width: 1701px;
+          height: 713px;
+          overflow: hidden;
+          text-align: center;
+          font-size: 36px;
+          color: #000;
+          font-family: Inter;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: 0px;
+            left: 350px;
+            font-size: 48px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1000.81px;
+            height: 108.36px;
+          "
+        >
+          3 Easy Steps to find your solution
+        </div>
+        <div id="css"
+          style="
+            position: absolute;
+            top: 357px;
+            left: 28px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 451.44px;
+            height: 69.73px;
+          "
+        >
+          Find best Doctor’s
+        </div>
+        <div id="css"
+          style="
+            position: absolute;
+            top: 357px;
+            left: 1189px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 451.44px;
+            height: 69.73px;
+          "
+        >
+          Happy consulatations
+        </div>
+        <div id="css"
+          style="
+            position: absolute;
+            top: 357px;
+            left: 608px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 451.44px;
+            height: 69.73px;
+          "
+        >
+          Get Appointment
+        </div>
+        <div
+          style="
+            position: absolute;
+            top: 402px;
+            left: -139px;
+            font-size: 24px;
+            color: #7a7272;
+            display: flex;
+            align-items: center;
+            width: 786.7px;
+            height: 118.01px;
+          "
+        >
+          <span  style="line-break: anywhere; width: 100%" id="css"
+            ><p style="margin-block-start: 0; margin-block-end: 0px">
+              Find your doctor with minimum effort.
+            </p>
+            <p style="margin: 0">
+              We’ve kept everything organized for you
+            </p></span
+          >
+        </div>
+        <div
+          style="
+            position: absolute;
+            top: 402px;
+            left: 1024px;
+            font-size: 24px;
+            color: #7a7272;
+            display: flex;
+            align-items: center;
+            width: 786.7px;
+            height: 118.01px;
+          "
+        >
+          <span id="css" style="line-break: anywhere; width: 100%"
+            ><p style="margin-block-start: 0; margin-block-end: 0px">
+              Find your doctor with minimum effort.
+            </p>
+            <p style="margin: 0">
+              We’ve kept everything organized for you
+            </p></span
+          >
+        </div>
+        <div 
+          style="
+            position: absolute;
+            top: 402px;
+            left: 441px;
+            font-size: 24px;
+            color: #7a7272;
+            display: flex;
+            align-items: center;
+            width: 786.7px;
+            height: 118.01px;
+          "
+        >
+          <span  id="css" style="line-break: anywhere; width: 100%"
+            ><p style="margin-block-start: 0; margin-block-end: 0px">
+              Ask for an appointment of a doctor quickly with
+            </p>
+            <p style="margin: 0">
+              almost a single click. We take care of the rest
+            </p></span
+          >
+        </div>
+        <img id="css"
+          style="
+            position: absolute;
+            top: 227px;
+            left: 166px;
+            width: 118px;
+            height: 112px;
+          "
+          alt=""
+          src="images/doctor.png"
+        /><img id="css"
+          style="
+            position: absolute;
+            top: 227px;
+            left: 775px;
+            width: 118px;
+            height: 112px;
+          "
+          alt=""
+          src="images/appointment.png"
+        /><img id="css"
+          style="
+            position: absolute;
+            top: 227px;
+            left: 1358px;
+            width: 118px;
+            height: 112px;
+          "
+          alt=""
+          src="images/bubble.png"
+        />
+      </section>
+
+
+
+
+
+      <section  id="sectionlast"
+        style="
+          position: absolute;
+          top: 1720px;
+          left: 0px;
+          width: 1701px;
+          height: 716px;
+          overflow: hidden;
+          text-align: left;
+          font-size: 32px;
+          color: #7a7272;
+          font-family: Inter;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: 3px;
+            left: 0px;
+            width: 850px;
+            height: 713px;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: 321px;
+              left: 50px;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              width: 750.12px;
+              height: 197px;
+            "
+          >
+            With out top doctors , we are able to provide best Medical services
+            above average . We have highly experienced doctors, so don’t worry.
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: 166px;
+              left: 55.99px;
+              font-size: 20px;
+              font-weight: 600;
+              color: #000;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 670.21px;
+              height: 143px;
+            "
+          >
+            Discovering a doctor you can assemble long-terms relationship with
+            is useful for your well-being.
+          </div>
+        </div>
+        <div
+          style="
+            position: absolute;
+            top: 3px;
+            left: 850px;
+            width: 851px;
+            height: 715px;
+            overflow: hidden;
+            text-align: center;
+            font-size: 36px;
+            color: #000;
+          "
+        >
+          <img
+            style="
+              position: absolute;
+              top: 72px;
+              left: 85px;
+              width: 681.61px;
+              height: 544.82px;
+              object-fit: cover;
+            "
+            alt=""
+            src="images/doctor.jpg"
+          />
+          <div
+            style="
+              position: absolute;
+              top: 358.37px;
+              left: 106px;
+              border-radius: 40px;
+              background-color: #fff;
+              width: 370.79px;
+              height: 165.26px;
+            "
+          ></div>
+          <img
+            style="
+              position: absolute;
+              top: 311.46px;
+              left: 265.91px;
+              width: 63.96px;
+              height: 65.04px;
+              object-fit: cover;
+            "
+            alt=""
+            src="images/heart.jpg"
+          />
+          <div
+            style="
+              position: absolute;
+              top: 396.77px;
+              left: 139.83px;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 315.99px;
+              height: 56.17px;
+            "
+          >
+            Doctor Khanna
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: 431.25px;
+              left: 139.83px;
+              font-size: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 315.99px;
+              height: 42.37px;
+            "
+          >
+            Cardiologist(5 yrs Exp)
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+
+  </body>
+
+</html>
